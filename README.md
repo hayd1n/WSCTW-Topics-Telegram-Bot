@@ -1,6 +1,6 @@
 # WSCTW-Topics-Telegram-Bot [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 全國技能競賽題目更新 自動通知Telegram機器人
-技能競賽勞動部網站題目爬蟲基於
+採用PHP編寫
 
 The MIT License (MIT)
 =====================
