@@ -40,19 +40,21 @@
                 $message .= "\n";
                 $message_count++;
             }
-            if($message_count >= 5 or $n >= $topics_count-1) {
-                printT("已累計達" . $message_count . "則新題目，發送Telegram公告訊息...");
-                $message .= "題目來源網站: " . $topic_url;
-                if(sendTelegramMessage($telegram_bot_chat_id, $message)) {
-                    echo "\033[33m[成功]\033[0m" . PHP_EOL;
-                    println("為了避免Telegram訊息發送過快，系統暫停1秒...");
-                    sleep(1);
-                    println("");
-                }else{
-                    echo "\033[31m[失敗]\033[0m" . PHP_EOL;
+            if($message_count > 0) {
+                if($message_count >= 5 or $n >= $topics_count-1) {
+                    printT("已累計達" . $message_count . "則新題目，發送Telegram公告訊息...");
+                    $message .= "題目來源網站: " . $topic_url;
+                    if(sendTelegramMessage($telegram_bot_chat_id, $message)) {
+                        echo "\033[33m[成功]\033[0m" . PHP_EOL;
+                        println("為了避免Telegram訊息發送過快，系統暫停1秒...");
+                        sleep(1);
+                        println("");
+                    }else{
+                        echo "\033[31m[失敗]\033[0m" . PHP_EOL;
+                    }
+                    $message = "★全國技能競賽最新題目更新★" . "\n". date("[Y/m/d H:i:s]") . "\n\n";
+                    $message_count = 0;
                 }
-                $message = "★全國技能競賽最新題目更新★" . "\n". date("[Y/m/d H:i:s]") . "\n\n";
-                $message_count = 0;
             }
             $n++;
         }
