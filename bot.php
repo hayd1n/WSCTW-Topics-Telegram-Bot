@@ -59,13 +59,13 @@
             $n++;
         }
 
-    //var_dump($topics); //DEBUG
+        //var_dump($topics); //DEBUG
 
-    //保存該次爬取紀錄
-    if($fp = fopen(dirname(__FILE__) . '/log.json','w+')) {  
-        $rc = fwrite($fp, json_encode($topics)); 
-        fclose($fp); 
-    }
+        //保存該次爬取紀錄
+        if($fp = fopen(dirname(__FILE__) . '/log.json','w+')) {  
+            $rc = fwrite($fp, json_encode($topics)); 
+            fclose($fp); 
+        }
 
     }else{
         echo "\033[31m[失敗]\033[0m" . PHP_EOL;
