@@ -1,11 +1,15 @@
 # WSCTW-Topics-Telegram-Bot [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-全國技能競賽題目更新 自動通知Telegram機器人
+全國技能競賽題目更新 自動通知Telegram機器人 
 採用PHP編寫
+
+# Telegram公開頻道
+[全國技能競賽題目即時通](https://t.me/worldskillstwnews) 
+採用本項目搭建 
 
 The MIT License (MIT)
 =====================
 
-Copyright © `<year>` `<copyright holders>`
+Copyright © 2021 CRT_HAO
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
