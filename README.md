@@ -1,5 +1,6 @@
+> 本項目已經過時，建議搭配 [CRT-HAO/wdasec-announcement-crawler](https://github.com/CRT-HAO/wdasec-announcement-crawler) 進行重構
 # WSCTW-Topics-Telegram-Bot [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-全國技能競賽題目更新 自動通知Telegram機器人 
+全國技能競賽題目更新 自動通知Telegram機器人  
 採用PHP編寫
 
 # Telegram公開頻道
